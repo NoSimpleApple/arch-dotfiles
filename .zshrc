@@ -14,6 +14,11 @@ setopt EXTENDED_GLOB
 setopt NO_BG_NICE
 unsetopt beep
 
+# custom action of ctrl-w to delete one word 
+# autoload -U select-word-style
+# select-word-style bash
+export WORDCHARS='.-&$#!*_(){};'
+
 export ZSH_COMPDUMP=$ZSH_CACHE_DIR/.zcompdump-$HOST
 
 # bindkey -N hoshino_arch_zsh emacs
